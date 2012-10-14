@@ -7,10 +7,24 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="hero-unit.css" rel="stylesheet">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" style="padding:40px">
 <div id="page_effect" style="display:none;">
+<div class="navbar navbar-fixed-top navbar-inverse" id="projectNavbar">
+    <div class="navbar-inner">
+        <div class="container">
+            <ul class="nav">
+                <li><a href="#aidan"><b>Aidan Gordon</b></a></li>
+                <li><a href="#terapeakScroll">Terapeak</a></li>
+                <li><a href="#ferriesScroll">BC Ferries</a></li>
+                <li><a href="#oaScroll">OA Solutions</a></li>
+                <li><a href="#pangaeaScroll">Pangaea Systems</a></li>
+                <li><a href="#salusScroll">Salus Systems</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-<div class="container hero-unit" rel="tooltip" title="Aidan Gordon - Software Developer">
+<div class="container hero-unit" rel="tooltip" title="Aidan Gordon - Software Developer" id="aidan">
     <div class="row">
         <div class="span9">
             <h1>Aidan Gordon<br>
@@ -68,15 +82,22 @@
 
 </div>
 
-<div class="container well" data-toggle="collapse" data-target="#terapeak" rel="tooltip"
-     title="Terapeak (Click to Collapse/Expand)">
+
+<div id="work_experience" data-spy="scroll" data-target="#projectNavbar" data-offset="0" class="scrollspy-example">
+</div>
+<div class="container well" rel="tooltip"
+     title="Terapeak (Click to Collapse/Expand)" id="terapeakScroll">
     <p>
     <h5>
+        <div class="btn btn-mini pull-right" data-toggle="collapse" data-target="#terapeak">+</div>
         <div class="lead"><b>Senior Software Developer / Web Services Lead, Terapeak, Jan 2011-Present</b></div>
     </h5>
     </p>
     <div id="terapeak" class="collapse in"><p>
         <ul>
+            <li>Leading the Services team at Terapeak to build scalable, RESTful Web Services that provide Sales
+                Analytics to sellers on the world's leading ecommerce platforms
+            </li>
             <li>Team member on a project that shipped a new 3rd party payment provider(Avangate) to enhance the existing
                 payment system (Beanstream and Paypal). This enabled our sales and marketing departments to pivot
                 quicker
@@ -93,31 +114,33 @@
         <p>
         <dl class="dl-horizontal">
             <dt>Technologies Used:</dt>
-            <dd><span class="label label-inverse" rel="tooltip" title="Restful Web Services">Restful Web Services</span>
-                <span class="label label-warning" rel="tooltip" title="Java">Java</span>
-                <span class="label label-warning" rel="tooltip" title="Groovy">Groovy</span>
-                <span class="label label-success" rel="tooltip" title="DropWizard">DropWizard/Jersey</span>
-                <span class="label label-info" rel="tooltip" title="Solr">Solr</span>
-                <span class="label label-info" rel="tooltip" title="Memcached">Memcached</span>
-                <span class="label label-success" rel="tooltip" title="Spring (Core)">Spring (Core)</span>
-                <span class="label label-success" rel="tooltip"
+            <dd><span class="btn btn-mini btn-inverse disabled" rel="tooltip" title="Restful Web Services">Restful Web Services</span>
+                <span class="btn btn-mini btn-primary disabled" rel="tooltip" title="Java">Java</span>
+                <span class="btn btn-mini btn-primary disabled" rel="tooltip" title="Groovy">Groovy</span>
+                <span class="btn btn-mini btn-success disabled" rel="tooltip"
+                      title="DropWizard">DropWizard/Jersey</span>
+                <span class="btn btn-mini btn-danger disabled" rel="tooltip" title="Solr">Solr</span>
+                <span class="btn btn-mini btn-danger disabled" rel="tooltip" title="Memcached">Memcached</span>
+                <span class="btn btn-mini btn-success disabled" rel="tooltip" title="Spring (Core)">Spring (Core)</span>
+                <span class="btn btn-mini btn-success disabled" rel="tooltip"
                       title="Spring (Web Services)">Spring (Web Services)</span>
-                <span class="label label-warning" rel="tooltip" title="PHP">PHP</span>
-                <span class="label label-warning" rel="tooltip" title="Javascript">Javascript</span>
-                <span class="label label-success" rel="tooltip" title="jQuery">jQuery</span>
-                <span class="label label-important" rel="tooltip" title="CSS">CSS</span>
-                <span class="label label-important" rel="tooltip" title="HTML">HTML</span>
-                <span class="label label-info" rel="tooltip" title="Postgres">Postgres</span>
-                <span class="label label-info" rel="tooltip" title="MySQL   ">MySQL</span>
+                <span class="btn btn-mini btn-primary disabled" rel="tooltip" title="PHP">PHP</span>
+                <span class="btn btn-mini btn-primary disabled" rel="tooltip" title="Javascript">Javascript</span>
+                <span class="btn btn-mini btn-success disabled" rel="tooltip" title="jQuery">jQuery</span>
+                <span class="btn btn-mini btn-info disabled" rel="tooltip" title="CSS">CSS</span>
+                <span class="btn btn-mini btn-info disabled" rel="tooltip" title="HTML">HTML</span>
+                <span class="btn btn-mini btn-danger disabled" rel="tooltip" title="Postgres">Postgres</span>
+                <span class="btn btn-mini btn-danger disabled" rel="tooltip" title="MySQL   ">MySQL</span>
             </dd>
         </dl>
         </p></div>
 </div>
 
-<div class="container well" data-toggle="collapse" data-target="#ferries" rel="tooltip"
-     title="BC Ferries (Click to Collapse/Expand)">
+<div class="container well" rel="tooltip"
+     title="BC Ferries (Click to Collapse/Expand)" id="ferriesScroll">
     <p>
     <h5>
+        <div class="btn btn-mini pull-right" data-toggle="collapse" data-target="#ferries">+</div>
         <div class="lead"><b>Senior Developer (Application
             Architecture), BC Ferries, Jul 2009 – Dec 2010</b></div>
     </h5>
@@ -142,24 +165,26 @@
         <dl class="dl-horizontal">
             <dt>Technologies Used:</dt>
             <dd>
-                <span class="label label-warning" rel="tooltip" title="Java">Java</span>
-                <span class="label label-inverse" rel="tooltip" title="Mobile">Mobile</span>
-                <span class="label label-success" rel="tooltip" title="Oracle">Oracle ADF</span>
-                <span class="label label-success" rel="tooltip"
+                <span class="btn btn-mini btn-primary disabled" rel="tooltip" title="Java">Java</span>
+                <span class="btn btn-mini btn-warning disabled" rel="tooltip" title="Mobile">Mobile</span>
+                <span class="btn btn-mini btn-success disabled" rel="tooltip" title="Oracle">Oracle ADF</span>
+                <span class="btn btn-mini btn-success disabled" rel="tooltip"
                       title="Oracle SOA Suite">Oracle SOA Suite (Oracle ESB)</span>
-                <span class="label label-info" rel="tooltip" title="Oracle Database">Oracle (RDBMS)</span>
-                <span class="label label-info" rel="tooltip" title="PL/SQL">Oracle PL/SQL</span>
-                <span class="label label-important" rel="tooltip" title="CSS">CSS</span>
-                <span class="label label-important" rel="tooltip" title="HTML">HTML</span>
-                <span class="label label-info" rel="tooltip" title="Sybase">Sybase</span>
+                <span class="btn btn-mini btn-danger disabled" rel="tooltip"
+                      title="Oracle Database">Oracle (RDBMS)</span>
+                <span class="btn btn-mini btn-danger disabled" rel="tooltip" title="PL/SQL">Oracle PL/SQL</span>
+                <span class="btn btn-mini btn-info disabled" rel="tooltip" title="CSS">CSS</span>
+                <span class="btn btn-mini btn-info disabled" rel="tooltip" title="HTML">HTML</span>
+                <span class="btn btn-mini btn-danger disabled" rel="tooltip" title="Sybase">Sybase</span>
             </dd>
         </dl>
         </p></div>
 </div>
-<div class="container well" data-toggle="collapse" data-target="#oa" rel="tooltip"
-     title="OA Solutions (Click to Collapse/Expand)">
+<div class="container well" rel="tooltip"
+     title="OA Solutions (Click to Collapse/Expand)" id="oaScroll">
     <p>
     <h5>
+        <div class="btn btn-mini pull-right" data-toggle="collapse" data-target="#oa">+</div>
         <div class="lead"><b>Consultant (Software
             Developer/Project Lead), OA Solutions, Jan 2006 – Jul 2009</b></div>
     </h5>
@@ -193,24 +218,26 @@
         <dl class="dl-horizontal">
             <dt>Technologies Used:</dt>
             <dd>
-                <span class="label label-warning" rel="tooltip" title="CJava">Java</span>
-                <span class="label label-warning" rel="tooltip" title="Java Swing">Java Swing</span>
-                <span class="label label-info" rel="tooltip" title="Oracle Database">Oracle (RDBMS)</span>
-                <span class="label label-warning" rel="tooltip" title="PL/SQL">Oracle PL/SQL</span>
-                <span class="label label-success" rel="tooltip" title="Hibernate">Hibernate</span>
-                <span class="label label-success" rel="tooltip" title="Spring (Core)">Spring (Core)</span>
-                <span class="label label-success" rel="tooltip" title="Apache Struts">Apache Struts</span>
-                <span class="label label-important" rel="tooltip" title="CSS">CSS</span>
-                <span class="label label-important" rel="tooltip" title="HTML">HTML</span>
-                <span class="label label-warning" rel="tooltip" title="javascript">Javascipt</span>
+                <span class="btn btn-mini btn-primary disabled" rel="tooltip" title="CJava">Java</span>
+                <span class="btn btn-mini btn-primary disabled" rel="tooltip" title="Java Swing">Java Swing</span>
+                <span class="btn btn-mini btn-danger disabled" rel="tooltip"
+                      title="Oracle Database">Oracle (RDBMS)</span>
+                <span class="btn btn-mini btn-primary disabled" rel="tooltip" title="PL/SQL">Oracle PL/SQL</span>
+                <span class="btn btn-mini btn-success disabled" rel="tooltip" title="Hibernate">Hibernate</span>
+                <span class="btn btn-mini btn-success disabled" rel="tooltip" title="Spring (Core)">Spring (Core)</span>
+                <span class="btn btn-mini btn-success disabled" rel="tooltip" title="Apache Struts">Apache Struts</span>
+                <span class="btn btn-mini btn-info disabled" rel="tooltip" title="CSS">CSS</span>
+                <span class="btn btn-mini btn-info disabled" rel="tooltip" title="HTML">HTML</span>
+                <span class="btn btn-mini btn-primary disabled" rel="tooltip" title="javascript">Javascipt</span>
             </dd>
         </dl>
         </p></div>
 </div>
-<div class="container well" data-toggle="collapse" data-target="#pangaea" rel="tooltip"
-     title="Pangaea (Click to Collapse/Expand)">
+<div class="container well" rel="tooltip"
+     title="Pangaea (Click to Collapse/Expand)" id="pangaeaScroll">
     <p>
     <h5>
+        <div class="btn btn-mini pull-right" data-toggle="collapse" data-target="#pangaea">+</div>
         <div class="lead"><b>Consultant (Software Developer),
             Pangaea Systems (now CGI), 2004-2006</b></div>
     </h5>
@@ -236,23 +263,25 @@
         <dl class="dl-horizontal">
             <dt>Technologies Used:</dt>
             <dd>
-                <span class="label label-warning" rel="tooltip" title="Java">Java</span>
-                <span class="label label-warning" rel="tooltip" title="Java Swing">Java Swing</span>
-                <span class="label label-info" rel="tooltip" title="Oracle Database">Oracle (RDBMS)</span>
-                <span class="label label-warning" rel="tooltip" title="PL/SQL">Oracle PL/SQL</span>
-                <span class="label label-success" rel="tooltip" title="Oracle Portal">Oracle Portal</span>
-                <span class="label label-success" rel="tooltip" title="Struts">Apache Struts</span>
-                <span class="label label-important" rel="tooltip" title="CSS">CSS</span>
-                <span class="label label-important" rel="tooltip" title="HTML">HTML</span>
-                <span class="label label-warning" rel="tooltip" title="javascript">Javascipt</span>
+                <span class="btn btn-mini btn-primary disabled" rel="tooltip" title="Java">Java</span>
+                <span class="btn btn-mini btn-primary disabled" rel="tooltip" title="Java Swing">Java Swing</span>
+                <span class="btn btn-mini btn-danger disabled" rel="tooltip"
+                      title="Oracle Database">Oracle (RDBMS)</span>
+                <span class="btn btn-mini btn-primary disabled" rel="tooltip" title="PL/SQL">Oracle PL/SQL</span>
+                <span class="btn btn-mini btn-success disabled" rel="tooltip" title="Oracle Portal">Oracle Portal</span>
+                <span class="btn btn-mini btn-success disabled" rel="tooltip" title="Struts">Apache Struts</span>
+                <span class="btn btn-mini btn-info disabled" rel="tooltip" title="CSS">CSS</span>
+                <span class="btn btn-mini btn-info disabled" rel="tooltip" title="HTML">HTML</span>
+                <span class="btn btn-mini btn-primary disabled" rel="tooltip" title="javascript">Javascipt</span>
             </dd>
         </dl>
         </p></div>
 </div>
-<div class="container well" data-toggle="collapse" data-target="#salus" rel="tooltip"
-     title="Salus (Click to Collapse/Expand)">
+<div class="container well" rel="tooltip"
+     title="Salus (Click to Collapse/Expand)" id="salusScroll">
     <p>
     <h5>
+        <div class="btn btn-mini pull-right" data-toggle="collapse" data-target="#salus">+</div>
         <div class="lead"><b>Consultant (Software Developer),
             Salus Systems, 2001-2004</b></div>
     </h5>
@@ -274,19 +303,23 @@
         <dl class="dl-horizontal">
             <dt>Technologies Used:</dt>
             <dd>
-                <span class="label label-warning" rel="tooltip" title="Java">Java</span>
-                <span class="label label-warning" rel="tooltip" title="Visual Basic">Visual Basic (6.0)</span>
-                <span class="label label-success" rel="tooltip" title="ASP">ASP</span>
-                <span class="label label-info" rel="tooltip" title="Oracle Database">Oracle (RDBMS)</span>
-                <span class="label label-info" rel="tooltip" title="Microsoft SQL Server">SQL Server</span>
-                <span class="label label-warning" rel="tooltip" title="PL/SQL">Oracle PL/SQL</span>
-                <span class="label label-success" rel="tooltip" title="Oracle Portal">Oracle Portal</span>
-                <span class="label label-important" rel="tooltip" title="CSS">CSS</span>
-                <span class="label label-important" rel="tooltip" title="HTML">HTML</span>
-                <span class="label label-warning" rel="tooltip" title="javascript">Javascipt</span>
+                <span class="btn btn-mini btn-primary disabled" rel="tooltip" title="Java">Java</span>
+                <span class="btn btn-mini btn-primary disabled" rel="tooltip"
+                      title="Visual Basic">Visual Basic (6.0)</span>
+                <span class="btn btn-mini btn-success disabled" rel="tooltip" title="ASP">ASP</span>
+                <span class="btn btn-mini btn-danger disabled" rel="tooltip"
+                      title="Oracle Database">Oracle (RDBMS)</span>
+                <span class="btn btn-mini btn-danger disabled" rel="tooltip"
+                      title="Microsoft SQL Server">SQL Server</span>
+                <span class="btn btn-mini btn-primary disabled" rel="tooltip" title="PL/SQL">Oracle PL/SQL</span>
+                <span class="btn btn-mini btn-success disabled" rel="tooltip" title="Oracle Portal">Oracle Portal</span>
+                <span class="btn btn-mini btn-info disabled" rel="tooltip" title="CSS">CSS</span>
+                <span class="btn btn-mini btn-info disabled" rel="tooltip" title="HTML">HTML</span>
+                <span class="btn btn-mini btn-primary disabled" rel="tooltip" title="javascript">Javascipt</span>
             </dd>
         </dl>
         </p></div>
+</div>
 </div>
 
 <div class="container">
@@ -294,11 +327,11 @@
         <div class="span12"><h3>Technical Experience</h3></div>
     </div>
     <div class="row">
-        <div class="span3"><h4>Programming / Web Languages</h4></div>
-        <div class="span3"><h4>Frameworks/Libraries</h4></div>
-        <div class="span3"><h4>Databases, Caches, ,Search Engines, & Operating Systems
+        <div class="span3"><h4>Programming & Markup Languages</h4></div>
+        <div class="span3"><h4>Frameworks, Libraries & Tools</h4></div>
+        <div class="span3"><h4>Databases, Caches,Search Engines, & Operating Systems
         </h4></div>
-        <div class="span3"><h4>Soft Skills</h4></div>
+        <div class="span3"><h4>Project Delivery</h4></div>
     </div>
     <div class="row">
         <div class="span3">
@@ -307,13 +340,18 @@
                 <span class="btn btn-primary btn-small disabled" rel="tooltip" title="Groovy">Groovy 1.8 - 2.0</span>
                 <span class="btn btn-primary btn-small disabled" rel="tooltip" title="PHP">PHP 5.0</span>
                 <span class="btn btn-primary btn-small disabled" rel="tooltip" title="javascript">Javascript</span>
-                <span class="btn btn-info btn-small disabled" rel="tooltip" title="HTML">HTML</span>
-                <span class="btn btn-info btn-small disabled" rel="tooltip" title="CSS">CSS</span>
+
                 <span class="btn btn-primary btn-small disabled" rel="tooltip" title="SQL">SQL</span>
                 <span class="btn btn-primary btn-small disabled" rel="tooltip" title="PL/SQL">PL/SQL 8.0+</span>
                 <span class="btn btn-primary btn-small disabled" rel="tooltip"
                       title="Visual Basic">Visual Basic (6.0)</span>
-                <span class="btn btn-primary btn-small disabled" rel="tooltip" title="ASP">ASP (3.0)</span></div>
+                <span class="btn btn-primary btn-small disabled" rel="tooltip" title="ASP">ASP (3.0)</span><span
+                    class="btn btn-info btn-small disabled" rel="tooltip" title="HTML">HTML</span>
+                <span class="btn btn-info btn-small disabled" rel="tooltip" title="CSS">CSS</span> <span
+                    class="btn btn-info btn-small disabled" rel="tooltip"
+                    title="Twitter Bootstrap">Twitter Bootstrap</span>
+                <span class="btn btn-info btn-small disabled" rel="tooltip" title="jQuery">jQuery</span>
+            </div>
         </div>
         <div class="span3">
             <div class="btn-group btn-group-vertical">
@@ -328,7 +366,12 @@
                 <span class="btn btn-success btn-small disabled" rel="tooltip" title="JSF">JSF</span>
                 <span class="btn btn-success btn-small disabled" rel="tooltip" title="Struts">Jakarta Struts</span>
                 <span class="btn btn-success btn-small disabled" rel="tooltip" title="Hibernate">Hibernate</span>
-                <span class="btn btn-success btn-small disabled" rel="tooltip" title="Ibatis">Ibatis</span></div>
+                <span class="btn btn-success btn-small disabled" rel="tooltip" title="Git / Gerrit">Git / Gerrit</span>
+                <span class="btn btn-success btn-small disabled" rel="tooltip" title="Subversion">Subversion</span>
+                <span class="btn btn-success btn-small disabled" rel="tooltip" title="Jenkins">Jenkins</span>
+                <span class="btn btn-success btn-small disabled" rel="tooltip" title="Sonar">Sonar</span>
+                <span class="btn btn-success btn-small disabled" rel="tooltip" title="Nexus">Nexus</span>
+            </div>
         </div>
         <div class="span3">
             <div class="btn-group btn-group-vertical">
@@ -367,22 +410,12 @@
 
     </div>
 </div>
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>
-
-<div class="container">
-    <div class="row">
-        <div class="span12"><h3>References</h3></div>
-    </div>
-    <div class="row span12">Available Upon Request</div>
-</div>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </div>
 <script>$(document).ready(function () {
-    $('#page_effect').fadeIn(2000);
+    $('#page_effect').fadeIn(2500);
 });</script>
 <script>$('#terapeak_header').tooltip('show');</script>
 </html>
