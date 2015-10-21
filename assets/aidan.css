@@ -1,0 +1,29 @@
+.aidan-link-row {
+	margin-top: 10px;
+}
+.aidan-title {
+	font-size: small;
+}
+.aidan-technologies-row {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.aidan-tech-button-group {
+	width: 100%;
+}
+.aidan-body {
+	padding: 50px;
+}
+.hero-unit {
+	background: #464646;
+	color: #fff;
+}
+.aidan-technologies-section {
+	padding-left: 32px;
+}
+.btn-mini {
+	margin-top: 5px;
+}
+.github-logo {
+	width: 20px;
+}
